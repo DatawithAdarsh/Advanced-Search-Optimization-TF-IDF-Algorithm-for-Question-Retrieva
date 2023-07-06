@@ -8,7 +8,7 @@ from wtforms import StringField, SubmitField
 
 def load_vocabs():
     vocab={}
-    with open('.\tf-idf\frequencies.txt', 'r') as f:
+    with open('tf-idf\frequencies.txt', 'r') as f:
         idf_values = f.readlines()
     with open(r'tf-idf\tokens.txt', 'r') as f:
         vocab_terms = f.readlines()
